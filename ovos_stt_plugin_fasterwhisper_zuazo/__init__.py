@@ -52,12 +52,18 @@ class ZuazoFasterWhisperSTT(STT):
             "base": self.MODELS_BASE,
             "small": self.MODELS_SMALL,
             "medium": self.MODELS_MEDIUM,
-            "large": self.MODELS_LARGE,
             "large-v1": self.MODELS_LARGE,
             "large-v2": self.MODELS_LARGE_V2,
             "large-v3": self.MODELS_LARGE_V3
         }
         if model in ['tiny', 'base', 'small', 'medium', 'large-v1', 'large-v2', 'large-v3', 'large']:
+            if model == "large-v3" and self.lang[:2] not in ["pt", "ca", "eu"]:
+                raise ValueError("large-v3 models only available for pt/ca/eu")
+            if model == "large":
+                if self.lang[:2] in ["pt", "ca", "eu"]:
+                    model = "large-v3"
+                else:
+                    model = "large-v2"
             models = mapping[model]
             if self.lang[:2] == "pt":
                 model = models[0]

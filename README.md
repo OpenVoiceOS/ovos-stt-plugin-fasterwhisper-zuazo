@@ -3,6 +3,8 @@
 
 FasterWhisper fine tuned models by [Xabier de Zuazo](https://huggingface.co/zuazo) for all the iberian peninsula languages, `pt`, `es`, `gl`, `ca`, `eu`
 
+> NOTE: this is intended to use only these specific finetuned models, if you want to use your own models use the main [ovos-stt-plugin-fasterwhisper](https://github.com/OpenVoiceOS/ovos-stt-plugin-fasterwhisper) instead
+
 ## Install
 
 `pip install ovos-stt-plugin-fasterwhisper-zuazo`
@@ -26,7 +28,7 @@ to use Large model with GPU
   "stt": {
     "module": "ovos-stt-plugin-fasterwhisper-zuazo",
     "ovos-stt-plugin-fasterwhisper-zuazo": {
-        "model": "large-v3",
+        "model": "large",
         "use_cuda": true,
         "compute_type": "float16",
         "beam_size": 5,
@@ -35,9 +37,9 @@ to use Large model with GPU
   }
 ```
 
-best model is automatically selected based on language unless specified
+best model is automatically selected based on language unless specified, valid config options are `tiny`,`base`,`small`,`medium`,`large`
 
-> NOTE: this is intended to use only these specific finetuned models, if you want to use your own use the main [ovos-stt-plugin-fasterwhisper]()
+> you can also select `large-1`, `large-v2` or `large-v3` explicitly, but `v3` is only available for `pt`,`ca`,`eu`
 
 ### Models
 
