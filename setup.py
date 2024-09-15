@@ -48,7 +48,7 @@ def required(requirements_file):
                 if pkg.strip() and not pkg.startswith("#")]
 
 
-PLUGIN_ENTRY_POINT = 'ovos-stt-plugin-fasterwhisper-zuazo = ovos_stt_plugin_fasterwhisper:ZuazoFasterWhisperSTT'
+PLUGIN_ENTRY_POINT = 'ovos-stt-plugin-fasterwhisper-zuazo = ovos_stt_plugin_fasterwhisper_zuazo:ZuazoFasterWhisperSTT'
 
 setup(
     name='ovos-stt-plugin-fasterwhisper-zuazo',
