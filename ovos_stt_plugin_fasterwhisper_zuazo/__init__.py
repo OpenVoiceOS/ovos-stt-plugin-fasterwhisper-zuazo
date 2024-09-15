@@ -60,7 +60,7 @@ class ZuazoFasterWhisperSTT(STT):
             if model == "large-v3" and self.lang[:2] not in ["pt", "ca", "eu"]:
                 raise ValueError("large-v3 models only available for pt/ca/eu")
             if model == "large":
-                if self.lang[:2] in ["pt", "ca", "eu"]:
+                if self.lang[:2] in ["pt", "eu"]:
                     model = "large-v3"
                 else:
                     model = "large-v2"
