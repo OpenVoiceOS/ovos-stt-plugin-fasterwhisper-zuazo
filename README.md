@@ -39,7 +39,7 @@ to use Large model with GPU
 
 best model is automatically selected based on language unless specified, valid config options are `tiny`,`base`,`small`,`medium`,`large`
 
-> you can also select `large-1`, `large-v2` or `large-v3` explicitly, but `v3` is only available for `pt`,`ca`,`eu`
+> you can also select `large-v1`, `large-v2` or `large-v3` explicitly, but `v3` is only available for `pt`,`ca`,`eu`
 
 ### Models
 
