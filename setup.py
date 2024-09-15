@@ -48,7 +48,7 @@ def required(requirements_file):
                 if pkg.strip() and not pkg.startswith("#")]
 
 
-PLUGIN_ENTRY_POINT = 'ovos-stt-plugin-fasterwhisper-zuazo = ovos_stt_plugin_fasterwhisper:ZuazoFasterWhisperSTT'
+PLUGIN_ENTRY_POINT = 'ovos-stt-plugin-fasterwhisper-zuazo = ovos_stt_plugin_faster_whisper_zuazo:ZuazoFasterWhisperSTT'
 
 setup(
     name='ovos-stt-plugin-fasterwhisper-zuazo',
@@ -58,7 +58,7 @@ setup(
     author='JarbasAi',
     author_email='jarbasai@mailfence.com',
     license='Apache-2.0',
-    packages=['ovos_stt_plugin_fasterwhisper'],
+    packages=['ovos_stt_plugin_fasterwhisper_zuazo'],
     install_requires=required("requirements/requirements.txt"),
     zip_safe=True,
     classifiers=[

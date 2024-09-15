@@ -70,11 +70,11 @@ class ZuazoFasterWhisperSTT(STT):
             elif self.lang[:2] == "gl":
                 model = models[1]
             elif self.lang[:2] == "ca":
-                model = models[2]
+                model = models[1] if model == "large-v3" else models[2]
             elif self.lang[:2] == "es":
                 model = models[3]
             elif self.lang[:2] == "eu":
-                model = models[4]
+                model = models[-1]
         if not model or model not in FasterWhisperSTT.MODELS + self.MODELS_LARGE_V3 + self.MODELS_LARGE_V2 + \
                 self.MODELS_LARGE + self.MODELS_MEDIUM + self.MODELS_SMALL + self.MODELS_BASE + self.MODELS_TINY:
             raise ValueError(f"ZuazoSTT is meant to use pretrained models for {self.available_languages},"
