@@ -1,6 +1,8 @@
 from ovos_plugin_manager.templates.stt import STT
 from ovos_stt_plugin_fasterwhisper import FasterWhisperSTT
 
+from ovos_utils import classproperty
+
 
 class ZuazoFasterWhisperSTT(STT):
     MODELS_LARGE_V3 = ["Jarbas/faster-whisper-large-v3-pt-cv13",
@@ -85,9 +87,9 @@ class ZuazoFasterWhisperSTT(STT):
     def execute(self, audio, language=None):
         return self.stt.execute(audio, language)
 
-    @property
-    def available_languages(self) -> set:
-        return set(self.LANGUAGES.keys())
+    @classproperty
+    def available_languages(cls) -> set:
+        return set(cls.LANGUAGES.keys())
 
 
 if __name__ == "__main__":
