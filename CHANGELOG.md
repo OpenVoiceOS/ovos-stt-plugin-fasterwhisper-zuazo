@@ -1,12 +1,12 @@
 # Changelog
 
-## [0.1.2a1](https://github.com/OpenVoiceOS/ovos-stt-plugin-fasterwhisper-zuazo/tree/0.1.2a1) (2024-09-15)
+## [0.1.3a1](https://github.com/OpenVoiceOS/ovos-stt-plugin-fasterwhisper-zuazo/tree/0.1.3a1) (2025-06-08)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-fasterwhisper-zuazo/compare/0.1.1...0.1.2a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-fasterwhisper-zuazo/compare/0.1.2...0.1.3a1)
 
 **Merged pull requests:**
 
-- fix:prefer catalan v2 to v3 \(lower WER\) [\#3](https://github.com/OpenVoiceOS/ovos-stt-plugin-fasterwhisper-zuazo/pull/3) ([JarbasAl](https://github.com/JarbasAl))
+- fix: compatibility with ovos-plugin-manager 1.X.X [\#5](https://github.com/OpenVoiceOS/ovos-stt-plugin-fasterwhisper-zuazo/pull/5) ([JarbasAl](https://github.com/JarbasAl))
 
 
 
