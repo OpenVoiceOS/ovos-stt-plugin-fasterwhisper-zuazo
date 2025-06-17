@@ -28,11 +28,11 @@ class ZuazoFasterWhisperSTT(STT):
                     "Jarbas/faster-whisper-small-ca-cv13",
                     "Jarbas/faster-whisper-small-es-cv13",
                     "Jarbas/faster-whisper-small-eu-cv16"]
-    MODELS_BASE = ["Jarbas/faster-whisper-small-pt-cv13",
-                   "Jarbas/faster-whisper-small-gl-cv13",
-                   "Jarbas/faster-whisper-small-ca-cv13",
-                   "Jarbas/faster-whisper-small-es-cv13",
-                   "Jarbas/faster-whisper-small-eu-cv16"]
+    MODELS_BASE = ["Jarbas/faster-whisper-base-pt-cv13",
+                   "Jarbas/faster-whisper-base-gl-cv13",
+                   "Jarbas/faster-whisper-base-ca-cv13",
+                   "Jarbas/faster-whisper-base-es-cv13",
+                   "Jarbas/faster-whisper-base-eu-cv16"]
     MODELS_TINY = ["Jarbas/faster-whisper-tiny-pt-cv13",
                    "Jarbas/faster-whisper-tiny-gl-cv13",
                    "Jarbas/faster-whisper-tiny-ca-cv13",
